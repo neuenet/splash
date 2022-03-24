@@ -1,0 +1,14 @@
+# OS garbage
+.DS_Store
+Thumbs.db
+
+# Folders
+.nyc_output
+dist
+node_modules
+
+# Files
+.env
+*.lock
+*.log
+package-lock.json
