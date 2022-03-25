@@ -1,4 +1,3 @@
-## 2022.03.23
+## 2022.03.24
 
 - Creates this project
-- Removes unnecessary instruction from README
