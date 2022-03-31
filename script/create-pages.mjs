@@ -53,7 +53,7 @@ function createIndexFile(json) {
       /// create/overwrite file
       await fs.writeFile(join(__dirname, "..", "build", json.ascii, "index.html"), renderToString(source, json), "utf8");
       /// notify success
-      console.log(`[build] page created: ${json.ascii}`);
+      console.log(`[splash] page created: ${json.ascii}`);
     } catch(err) {
       console.group("[error]");
       console.error(err);

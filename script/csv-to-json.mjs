@@ -4,14 +4,13 @@
 ///  N A T I V E
 
 import { createRequire } from "module";
+import { readFileSync, writeFileSync } from "fs";
 
 const get = createRequire(import.meta.url);
-const readFileSync = get("fs").readFileSync;
-const writeFileSync = get("fs").writeFileSync;
 
 ///  I M P O R T
 
-const csvToObj = get("csv-to-js-parser").csvToObj;
+const { csvToObj } = __get("csv-to-js-parser");
 
 
 
@@ -24,7 +23,7 @@ function createJSONFile() {
 
   try {
     writeFileSync("catalogue.json", JSON.stringify(csvToObj(data), null, " "));
-    console.log("[build] JSON file created");
+    console.log("[splash] JSON file created");
   } catch(err) {
     console.error(err);
   }

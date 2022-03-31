@@ -33,5 +33,5 @@
     "update": "updates --update ./"
   },
   "types": "src/index.d.ts",
-  "version": "2022.03.24.2"
+  "version": "2022.03.31"
 }

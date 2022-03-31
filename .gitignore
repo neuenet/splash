@@ -3,6 +3,7 @@
 Thumbs.db
 
 # Folders
+build
 node_modules
 
 # Files
